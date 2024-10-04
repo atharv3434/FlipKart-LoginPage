@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f3f6;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    display: flex;
+    width: 70%;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.login-left {
+    flex: 1;
+    background-color: #2874f0;
+    color: white;
+    padding: 50px;
+}
+
+.login-left h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.login-left p {
+    font-size: 16px;
+}
+
+.login-right {
+    flex: 1;
+    padding: 40px;
+}
+
+form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input:focus {
+    border-color: #2874f0;
+    outline: none;
+}
+
+.login-btn {
+    background-color: #fb641b;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.login-btn:hover {
+    background-color: #e56013;
+}
+
+.terms {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #878787;
+}
+
+.terms a {
+    color: #2874f0;
+    text-decoration: none;
+}
+
+.forgot {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #2874f0;
+    text-decoration: none;
+}
+
+.or {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    font-size: 14px;
+    color: #878787;
+}
+
+.or:before, .or:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #878787;
+}
+
+.or:before {
+    left: 0;
+}
+
+.or:after {
+    right: 0;
+}
+
+.signup-btn {
+    background-color: #fff;
+    color: #2874f0;
+    border: 1px solid #2874f0;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.signup-btn:hover {
+    background-color: #f1f3f6;
+}
+
+@media (max-width: 768px) {
+    .login-box {
+        flex-direction: column;
+    }
+}
